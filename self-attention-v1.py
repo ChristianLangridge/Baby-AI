@@ -107,5 +107,5 @@ scaled_sims
 attention_percents = F.softmax(scaled_sims, dim=1)
 attention_percents
 
-torch.matmul(attention_percents, selfAttention.W_v(encodings_matrix))
+print(torch.matmul(attention_percents, selfAttention.W_v(encodings_matrix)))
 
